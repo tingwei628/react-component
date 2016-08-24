@@ -1,0 +1,49 @@
+{
+  "name": "react-component",
+  "version": "1.0.0",
+  "description": "The playground for build react-components",
+  "main": "'./src/index.js'",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tingwei628/react-component.git"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "tingwei628",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tingwei628/react-component/issues"
+  },
+  "homepage": "https://github.com/tingwei628/react-component#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.13.0",
+    "classnames": "^2.2.5",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "connect-history-api-fallback": "^1.3.0",
+    "css-loader": "^0.24.0",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}
