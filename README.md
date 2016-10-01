@@ -1,8 +1,10 @@
-# react-component
+#react-component
 
-###Component List
+##Component List
 
   - FileUpload
   - HtmlEditor
   - DataTable
 
+##License
+MIT
