@@ -7,6 +7,12 @@
   - Table
   - [Timer](https://github.com/tingwei628/react-component/tree/master/src/Timer)
 
+##Installation
+ ```
+  $git clone
+  $npm start  // start localhost:// 3000
+ ```
+
 ##[DEMO](https://tingwei628.github.io/react-component/)
 
 ##Documents
