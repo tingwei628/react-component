@@ -5,7 +5,7 @@
   - FileUpload
   - HtmlEditor
   - Table
-  - Timer
+  - [Timer](https://github.com/tingwei628/react-component/tree/master/src/Timer)
 
 ##Documents
 [Link](https://github.com/tingwei628/react-component/wiki)
