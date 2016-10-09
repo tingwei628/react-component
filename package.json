@@ -5,7 +5,13 @@
   "main": "'./src/index.js'",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src",
+    "test": "npm run lint",
+    "build": "npm run build:demo",
+    "build:demo": "npm run clean:demo && cross-env NODE_ENV=production webpck -p --config webpack.config.gh-pages.js --bail",
+    "clean:demo": "rimraf build",
+    "predeploy": "cp ./travis.yml ./build/",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,7 +22,7 @@
     "components"
   ],
   "author": "tingwei628",
-  "license": "BSD",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tingwei628/react-component/issues"
   },
@@ -29,22 +35,38 @@
     "react-dom": "^15.3.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.5.0",
     "babel-core": "^6.13.2",
+    "babel-eslint": "^7.0.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
+    "codecov": "^1.0.1",
     "connect-history-api-fallback": "^1.3.0",
+    "cors": "^2.8.1",
+    "cross-env": "^3.1.2",
     "css-loader": "^0.24.0",
+    "dotenv": "^2.0.0",
+    "eslint": "^3.7.1",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-react": "^6.3.0",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
+    "gh-pages": "^0.11.0",
     "html-webpack-plugin": "^2.22.0",
+    "postcss-loader": "^0.13.0",
     "react-hot-loader": "^1.3.0",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.2"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
   }
 }

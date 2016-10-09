@@ -1,2 +1,5 @@
+.DS_Store
 node_modules/
 *.md
+coverage
+npm-debug.log

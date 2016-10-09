@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import styles from './style';
+import './style.css';
 import {
   format,
   display,
@@ -12,8 +12,6 @@ class Timer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isRightHover: false,
-      isLeftHover: false,
       re: '00:00:00:000',
       le: [],
       isRun: false,
@@ -28,11 +26,6 @@ class Timer extends Component {
     this.ss = undefined;
     this.mm = 0;
     this.hh = 0;
-    this.toggleHover = (dir) => {
-      this.setState({
-        [`is${dir}Hover`]: !this.state[`is${dir}Hover`],
-      });
-    };
     this.start = this.start.bind(this);
     this.reset = this.reset.bind(this);
     this.count = this.count.bind(this);
@@ -42,7 +35,7 @@ class Timer extends Component {
   renderRecord() {
     const data = this.state.le;
     return data.map((record, index) => 
-    (<div style={styles.record} key={`key${index}`}>{record}</div>));
+    (<div className="record" key={`key${index}`}>{record}</div>));
   }
   start() {
     this.timeId = window.requestAnimationFrame(this.step);
@@ -112,55 +105,41 @@ class Timer extends Component {
   }
   render() {
     const { isRightHover, isLeftHover, isRun, isPause } = this.state;
-    const rightBtnStyle = Object.assign({}, styles.button, {
-      backgroundColor: isRightHover ? '#6e6ae2' : '#a9a7e5'
-    });
-    const leftBtnStyle = Object.assign({}, styles.button, {
-      backgroundColor: isLeftHover ? '#6e6ae2' : '#a9a7e5'
-    });
     return(
-      <div style={styles.layout}>
-        <div style={styles.header}>Timer</div>
-        <div style={styles.panel}>
+      <div className="layout">
+        <div className="header">Timer</div>
+        <div className="panel">
           {this.state.re}
         </div>
           {!isPause && <span>
             <button 
-              style={leftBtnStyle}
+              className="button"
               onClick={this.count}
-              onMouseEnter={() => this.toggleHover('Left')}
-              onMouseLeave={() => this.toggleHover('Left')}
             >Count
             </button>
           </span>}
           {isPause && <span>
             <button
-              style={leftBtnStyle}
+              className="button"
               onClick={this.reset}
-              onMouseEnter={() => this.toggleHover('Left')}
-              onMouseLeave={() => this.toggleHover('Left')}
             >Reset
             </button>
           </span>}
           { (!isRun === !isPause) && <span>
             <button 
-              style={rightBtnStyle}
+              className="button"
               onClick={this.start}
-              onMouseEnter={() => this.toggleHover('Right')}
-              onMouseLeave={() => this.toggleHover('Right')}
             >Start
             </button>
           </span>}
           {(isRun !== isPause) &&<span>
             <button
-              style={rightBtnStyle}
+              className="button"
               onClick={this.pause}
-              onMouseEnter={() => this.toggleHover('Right')}
-              onMouseLeave={() => this.toggleHover('Right')}
             >Pause
             </button>
           </span>}
-          <div style={styles.list}>
+          <div className="list">
             {this.renderRecord()}
           </div>
       </div>  
