@@ -4,7 +4,15 @@
 
   - FileUpload
   - HtmlEditor
-  - DataTable
+  - Table
+  - [Timer](https://github.com/tingwei628/react-component/tree/master/src/Timer)
+
+##Documents
+[Link](https://github.com/tingwei628/react-component/wiki)
+
+##Contributing
+- Fork and Pull request
+- Bug reported on Issues
 
 ##License
-MIT
+MIT license
