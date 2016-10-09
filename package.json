@@ -7,9 +7,9 @@
     "start": "node server.js",
     "lint": "eslint src",
     "test": "npm run lint",
-    "build": "npm run build:demo",
-    "build:demo": "npm run clean:demo && cross-env NODE_ENV=production webpck -p --config webpack.config.gh-pages.js --bail",
+    "build:demo": "npm run clean:demo && cross-env NODE_ENV=production webpack -p --config webpack.config.gh-pages.js --bail",
     "clean:demo": "rimraf build",
+    "build": "npm run build:demo",
     "predeploy": "cp ./travis.yml ./build/",
     "deploy": "gh-pages -d build"
   },
