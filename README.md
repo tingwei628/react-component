@@ -7,6 +7,8 @@
   - Table
   - [Timer](https://github.com/tingwei628/react-component/tree/master/src/Timer)
 
+##[DEMO](https://tingwei628.github.io/react-component/)
+
 ##Documents
 [Link](https://github.com/tingwei628/react-component/wiki)
 
