@@ -8,7 +8,11 @@
   - Timer
 
 ##Documents
-[Link]()
+[Link](https://github.com/tingwei628/react-component/wiki)
+
+##Contributing
+- Fork and Pull request
+- Bug reported on Issues
 
 ##License
 MIT license
