@@ -8,9 +8,14 @@
   - [Timer](https://github.com/tingwei628/react-component/tree/master/src/Timer)
 
 ##Installation
+ 1. git clone into your directory!
  ```
-  $git clone
-  $npm start  // start localhost:// 3000
+  $git clone https://github.com/tingwei628/react-component.git
+ ```
+
+ 2. start localhost://3000 !
+ ```
+  $npm start
  ```
 
 ##[DEMO](https://tingwei628.github.io/react-component/)
