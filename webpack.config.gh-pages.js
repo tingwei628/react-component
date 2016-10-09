@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: '[name].[chunkhash].js',
-    publicPath: '/',
+    publicPath: './',
     chunkFilename: '[id].[chunkhash].chunk.js'
   },
   plugins: [
