@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import Timer from './Timer';
 export default class App extends Component {
+  constructor() {
+  	super();
+  }
   render() {
-    return(<div>HI</div>);
+    return(
+    	<div>
+        <Timer />
+    	</div>
+    );
   };
 }
