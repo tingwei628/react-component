@@ -1,3 +1,7 @@
+/*
+  How to compose and generate a HOC(High Order Component)
+  ES6
+*/
 import React from 'react';
 import {render} from 'react-dom';
 const compose = (Wrapper) => (props) => (<Wrapper {...props} />);
