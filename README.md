@@ -1,5 +1,10 @@
 #react-component
 
+##Introduction
+- No side-effect components
+- examples (HOC...)
+- patterns (topics covered those reuse, data flow, async...)
+
 ##Component List
 
   - FileUpload
