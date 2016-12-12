@@ -12,11 +12,5 @@ function Inner(props) {
   return <div style={{ color : `${props.color}`}}>{props.text}</div>
 }
 
-function Outer(outProps) {
-  const fn = outProps.fn; // compose function here!
-  return (
-    <div>{fn(Inner)(outProps)}</div> // first-order HOC
-  );
-}
-
-render(<Outer {...props} />, document.querySelector('#app'));
+const afterCompose = compose(Inner)(props);
+render(afterCompose, document.querySelector('#app'));
