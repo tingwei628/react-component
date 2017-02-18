@@ -3,7 +3,7 @@
   ES6
 */
 import React from 'react';
-import {render} from 'react-dom';
+import ReactDOM from 'react-dom';
 const compose = (Wrapper) => (props) => (<Wrapper {...props} />);
 const props = {fn: compose, color: 'red', text: 'okkk'}; // props_you_want
 
@@ -13,4 +13,4 @@ function Inner(props) {
 }
 
 const afterCompose = compose(Inner)(props);
-render(afterCompose, document.querySelector('#app'));
+ReactDOM.render(afterCompose, document.querySelector('#app'));
