@@ -28,8 +28,8 @@ export default {
       ],
       exclude: path.resolve(__dirname, '../node_modules/**'),
       babelrc: false,
-      plugins: ['external-helpers'],
-      externalHelpers: true
+      runtimeHelpers: true,
+      plugins: ['external-helpers']
     }),
     nodeResolve({
       module: true,
