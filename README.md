@@ -17,11 +17,22 @@
  ```
   $git clone https://github.com/tingwei628/react-component.git
  ```
-
- 2. start localhost://3000 !
+  
+ 2. install
+ ```
+  $npm install
+ ```
+ 
+ 3. start localhost://3000 !
  ```
   $npm start
  ```
+
+##Bundler
+ 
+ - Webpack
+  
+ - Rollup
 
 ##[DEMO](https://tingwei628.github.io/react-component/)
 
