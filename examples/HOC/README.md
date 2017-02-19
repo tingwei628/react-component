@@ -9,4 +9,4 @@ Open localhost:3001
 
 ##Feature
 - Live reloading
-- Bundler: [Rollup]
+- Bundler: [Rollup](https://github.com/tingwei628/react-component/blob/master/rollup/rollup.config.js)
