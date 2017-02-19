@@ -1,3 +1,4 @@
+import serve from 'rollup-plugin-serve';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
@@ -15,6 +16,10 @@ export default {
   ),
   format: 'iife',
   plugins: [
+    serve({
+      contentBase: path.resolve(__dirname, '../examples/HOC'),
+      port: 3001
+    }),
     babel({
       presets: [
         'react',

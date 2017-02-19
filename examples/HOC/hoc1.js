@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 const compose = (Wrapper) => (props) => (<Wrapper {...props} />);
-const props = {fn: compose, color: 'red', text: 'okkk'}; // props_you_want
+const props = {fn: compose, color: 'red', text: 'WTF123'}; // props_you_want
 
 
 function Inner(props) {
@@ -13,4 +13,11 @@ function Inner(props) {
 }
 
 const afterCompose = compose(Inner)(props);
-ReactDOM.render(afterCompose, document.querySelector('#app'));
+
+ReactDOM.render(afterCompose, document.getElementById('app'));
+if (process.env.NODE_ENV !== 'production') { // for hot reload
+  document.write(
+    '<script src="http://' + (location.host || 'localhost').split(':')[0] +
+    ':35729/livereload.js?snipver=1"></' + 'script>'
+  );
+}
