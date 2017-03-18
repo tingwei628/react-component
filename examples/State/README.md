@@ -20,3 +20,25 @@ this.setState({ myState: this.state.myState + 1 });
 ```js
 this.setState((state, props) => ({ myState: state.myState + 1 }));
 ```
+
+2. Another exmaple (see state.js)
+
+```js
+// initial myState = 0;
+this.setState({ myState: this.state.myState + 1 });
+this.setState({ myState: this.state.myState + 2 });
+this.setState({ myState: this.state.myState + 3 });
+
+// after render
+console.log(this.state.myState); // 3 ! (WTF?)
+```
+
+```js
+// initial myState = 0;
+this.setState((state, props) => ({ myState: state.myState + 1 }));
+this.setState((state, props) => ({ myState: state.myState + 2 }));
+this.setState((state, props) => ({ myState: state.myState + 3 }));
+
+// after render
+console.log(this.state.myState); // 10 !
+```
