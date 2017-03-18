@@ -21,20 +21,20 @@ this.setState({ myState: this.state.myState + 1 });
 this.setState((state, props) => ({ myState: state.myState + 1 }));
 ```
 
-2. Another exmaple (see state.js)
+2. Another exmaple ([see state.js](https://github.com/tingwei628/react-component/blob/master/examples/State/state.js))
 
 ```js
-// initial myState = 0;
+// initial myState = 4;
 this.setState({ myState: this.state.myState + 1 });
 this.setState({ myState: this.state.myState + 2 });
 this.setState({ myState: this.state.myState + 3 });
 
 // after render
-console.log(this.state.myState); // 3 ! (WTF?)
+console.log(this.state.myState); // 7 ! (WTF?)
 ```
 
 ```js
-// initial myState = 0;
+// initial myState = 4;
 this.setState((state, props) => ({ myState: state.myState + 1 }));
 this.setState((state, props) => ({ myState: state.myState + 2 }));
 this.setState((state, props) => ({ myState: state.myState + 3 }));
