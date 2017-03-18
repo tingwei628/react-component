@@ -11,12 +11,12 @@
 -  pass object to setState
 
 ```js
-this.setState({ myState: myState + 1 });
+this.setState({ myState: this.state.myState + 1 });
 ```
  
 
 -  pass functional state to setState
 
 ```js
-this.setState((state, props) => ({ myState: myState + 1 }));
+this.setState((state, props) => ({ myState: state.myState + 1 }));
 ```
