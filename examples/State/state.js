@@ -58,6 +58,9 @@ var queue2 = [
 addScore.apply(myView1, [queue1]);
 addScore.apply(myView2, [queue2]);
 
-console.log(myView1.state);   // { score: 7 }
+console.log(myView1.state);   // { score: 7 }, weird ..
 console.log(myView2.state);   // { score: 10 } 
 console.log(myView1.state.score === myView2.state.score); // false !! wow
+
+/* Explantion */
+// 因為 object 傳進去的話 會全部先merge 在一起...
