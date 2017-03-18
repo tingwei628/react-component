@@ -59,4 +59,5 @@ addScore.apply(myView1, [queue1]);
 addScore.apply(myView2, [queue2]);
 
 console.log(myView1.state);   // { score: 7 }
-console.log(myView2.state);   // { score: 10 }
+console.log(myView2.state);   // { score: 10 } 
+console.log(myView1.state.score === myView2.state.score); // false !! wow
