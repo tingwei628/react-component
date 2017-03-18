@@ -4,6 +4,17 @@
 
 ### Introduction
 
-1. setState
+1. Compare TWO ways to pass parameters to setState 
+
 -  pass object to setState
+
+```js
+this.setState({ myState: myState + 1 });
+```
+ 
+
 -  pass functional state to setState
+
+```js
+this.setState((state, props) => ({ myState: myState + 1 }));
+```
