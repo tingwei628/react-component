@@ -1,3 +1,5 @@
+// ES5 syntax !!
+
 function Component() {
   this.state = {
     score: 0
