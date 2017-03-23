@@ -6,6 +6,8 @@
 
 > 例如 onClick
 
+[Demo](https://jsfiddle.net/Laxqmuyu/)
+
 * ES6 不會autobind
 
 ```js
