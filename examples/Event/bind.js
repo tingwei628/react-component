@@ -12,10 +12,10 @@ class User {
     var r3 = document.getElementById("root3");
     var r4 = document.getElementById("root4");
     var t = this.handleEvent2.bind(this);
-    r3.addEventListener('click', this.handleEvent);
-    r4.addEventListener('click', t);
+    r3.addEventListener('click', this.handleEvent);  // undefined?
+    r4.addEventListener('click', t); // "Jeff"
   }
-  handle() {
+  handle() { // 根本不需要bind
     console.log("handle ---> hello, " + this.data);
   }
   handleEvent() {
@@ -28,7 +28,9 @@ class User {
 function handle2() {
    console.log("handle2 ---> hello, " + this.data);
 }
-User.prototype.handle2 = handle2;
+
+User.prototype.handle2 = handle2; // 注意, 這裏從prototype 設定
+
 var u = new User('Jeff');
 u.handle(); // handle ---> hello, Jeff
 u.handle2(); // handle2 ---> hello, Jeff
