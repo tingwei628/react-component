@@ -12,6 +12,7 @@ addons:
 general:
   branches:
     ignore:
+      - master
       - gh-pages
 machine:
   node:
