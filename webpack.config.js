@@ -1,11 +1,11 @@
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
-var HtmlWebpackPlugin = require('html-webpack-plugin'); 
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
-  entry: ['webpack-hot-middleware/client?reload=true', './src/demo/index.js'],
+  entry: ['webpack-hot-middleware/client?reload=true', './src/Timer/index.js'],
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
@@ -41,19 +41,19 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-	      loaders: ['react-hot', 'babel'],
-	      include: path.join(__dirname, 'src'),
-	      exclude: '/node_modules/'
+        loaders: ['react-hot', 'babel'],
+        include: path.join(__dirname, 'src'),
+        exclude: '/node_modules/'
       }, {
         test: /\.css$/,
-	      loader: 'style!css?importLoaders=1!postcss',
+        loader: 'style!css?importLoaders=1!postcss',
       }, {
-	      test: /\.(jpg|png|svg|jpeg|gif|woff|woff2|eot|ttf|ico)/,
+        test: /\.(jpg|png|svg|jpeg|gif|woff|woff2|eot|ttf|ico)/,
         loaders: ['url-loader?limit=10000'],
       }
-    ]  
+    ]
   },
-  postcss: function() {
+  postcss: function () {
     return [autoprefixer];
   },
   resolve: {

@@ -76,6 +76,7 @@
     "rollup-plugin-uglify": "1.0.1",
     "rollup-watch": "^3.2.2",
     "style-loader": "0.13.1",
+    "ts-loader": "^2.3.7",
     "url-loader": "0.5.7",
     "webpack": "1.13.2",
     "webpack-dev-middleware": "1.6.1",

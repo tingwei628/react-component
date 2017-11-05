@@ -2,12 +2,12 @@ var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin'); 
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
   entry: {
-    'demo': [path.join(__dirname, 'src/demo/index.js')],
+    'demo': [path.join(__dirname, 'src/Timer/index.js')],
     'vendors': ['react', 'react-dom']
   },
   output: {
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/Timer/index.html',
       inject: true,
       filename: 'index.html'
     }),
@@ -53,9 +53,9 @@ module.exports = {
         test: /\.(jpg|png|svg|jpeg|gif|woff|woff2|eot|ttf|ico)/,
         loaders: ['url-loader?limit=10000']
       }
-    ]  
+    ]
   },
-  postcss: function() {
+  postcss: function () {
     return [autoprefixer];
   },
   resolve: {

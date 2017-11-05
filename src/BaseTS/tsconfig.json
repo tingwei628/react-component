@@ -1,0 +1,18 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "typeRoots": [
+      "./src/",
+      "./test/"
+    ],
+    "outFile": "./build/compiled.js"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./test/**/*.spec.ts"
+  ]
+}
