@@ -1,18 +1,22 @@
 {
-  "extends": "./base.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "module": "commonjs",
+    //"module": "commonjs",
     "typeRoots": [
       "./src/",
       "./test/"
     ],
-    "outFile": "./build/compiled.js"
+    "declarationDir": "./dist/es6",
+    "outDir": "./dist/es6",
+    "module": "umd",
+    "jsx": "react" // react 需要這行    
+    //"outFile": "./build/compiled.js"
   },
   "include": [
-    "./src/**/*"
+    "./src/*"
   ],
   "exclude": [
-    "node_modules",
-    "./test/**/*.spec.ts"
+    "node_modules"
+    //"./test/**/*.spec.ts"
   ]
 }
