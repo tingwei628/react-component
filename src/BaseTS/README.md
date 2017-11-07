@@ -4,7 +4,7 @@
 
 ## Usage
 
-> First, cd to [bin] (https://github.com/tingwei628/react-component/tree/master/src/BaseTS/bin)
+> First, cd to [bin](https://github.com/tingwei628/react-component/tree/master/src/BaseTS/bin)
 
 - build
 ```
