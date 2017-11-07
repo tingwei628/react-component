@@ -3,3 +3,5 @@ node_modules/
 *.md
 coverage
 npm-debug.log
+*.test.ts
+node_module/**/dist/**/*
