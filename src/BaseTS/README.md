@@ -21,5 +21,13 @@ $make run
 $make run
 ```
 
+- lint
+> tslint
+```
+$make lint
+```
+
+## [Jest setting in package.json](https://github.com/tingwei628/react-component/blob/master/package.json)
+
 ## Stack
 > TypeScript, Node, React, Jest ...etc
