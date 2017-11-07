@@ -27,7 +27,7 @@ $make run
 $make lint
 ```
 
-## [Jest setting in package.json](https://github.com/tingwei628/react-component/blob/master/package.json)
+## [Jest setting in package.json](https://github.com/tingwei628/react-component/blob/master/package.json#L93)
 
 ## Stack
 > TypeScript, Node, React, Jest ...etc
