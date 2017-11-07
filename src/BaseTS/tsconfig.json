@@ -1,22 +1,29 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    //"module": "commonjs",
-    "typeRoots": [
-      "./src/",
-      "./test/"
-    ],
-    "declarationDir": "./dist/es6",
+    //"declarationDir": "./dist/es6",
+    "rootDir": "./src",
     "outDir": "./dist/es6",
     "module": "umd",
-    "jsx": "react" // react 需要這行    
-    //"outFile": "./build/compiled.js"
+    "baseUrl": "../../node_modules",
+    "jsx": "react" // react 需要這行
   },
-  "include": [
-    "./src/*"
-  ],
   "exclude": [
-    "node_modules"
-    //"./test/**/*.spec.ts"
+    "./BaseTS__Test/**/*",
+    "./dist/**/*",
+    "./bin/**/*",
+    "../../node_modules"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "typeRoots": [ // define package type in .ts
+    "../../node_modules/@types"
+  ],
+  "types": [
+    "react",
+    "react-dom",
+    "node",
+    "jest"
   ]
 }

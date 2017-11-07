@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "moduleResolution": "classic",
+    "moduleResolution": "node",
     "noImplicitAny": true,
+    "noImplicitThis": true,
     "strictNullChecks": false,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "allowJs": true,
     "declaration": true,
     "target": "es6", //編譯為es6
     "lib": [
