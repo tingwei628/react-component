@@ -12,7 +12,7 @@
   - Table
   - [Timer](https://github.com/tingwei628/react-component/tree/master/src/Timer)
 
-## TypeScript Template
+## [TypeScript Template](https://github.com/tingwei628/react-component/tree/master/src/BaseTS)
 
 ## Installation
  1. git clone into your directory!
