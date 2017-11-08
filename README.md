@@ -12,6 +12,8 @@
   - Table
   - [Timer](https://github.com/tingwei628/react-component/tree/master/src/Timer)
 
+## TypeScript Template
+
 ## Installation
  1. git clone into your directory!
  ```
