@@ -6,28 +6,28 @@
 
 > First, cd to [bin](https://github.com/tingwei628/react-component/tree/master/src/BaseTS/bin)
 
-- build
+### build
 ```
 $make build
 ```
 
-- minify js, css, public resources, and etc.
+### minify js, css, public resources, and etc.
 > Uglify-es
 ```
 $make minify
 ```
 
-- run
+### run js
 ```
 $make run
 ```
 
-- test
+### test
 ```
 $make run
 ```
 
-- lint
+### lint
 > tslint
 ```
 $make lint
