@@ -1,5 +1,6 @@
 >Inspired by [React Higher Order Components in depth @franleplant](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.yay51bmqh)
 
+## [LIVE DEMO](https://tingwei628.github.io/react-component/examples/HOC/)
 ## Quick Start
 
 Step1.
