@@ -30,14 +30,6 @@
   $npm start
  ```
 
-## Bundler
- 
- - Webpack
-  
- - Rollup
-
-## [DEMO](https://tingwei628.github.io/react-component/)
-
 ## Documents
 [Link](https://github.com/tingwei628/react-component/wiki)
 
