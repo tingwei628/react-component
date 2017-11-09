@@ -1,0 +1,8 @@
+.ts {
+  background: black;
+  width: 100%;
+}
+
+.ts--middle {
+  border: 1px solid green;
+}
