@@ -14,7 +14,7 @@ $make build
 - minify js, css, public resources, and etc.
 > Uglify-es
 ```
-#make minify
+$make minify
 ```
 
 - run
