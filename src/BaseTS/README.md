@@ -12,7 +12,7 @@ $make build
 ```
 
 ### minify js, css, public resources, and etc.
-> Uglify-es
+> Uglify-es, uglifycss
 ```
 $make minify
 ```
